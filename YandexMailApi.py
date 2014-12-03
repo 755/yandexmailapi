@@ -111,7 +111,7 @@ class YandexMailApi(object):
         tag = xml.find('result')
         if tag.text == "exists":
             return True
-        elif tag.text == "nouser":
+        elif tag.text == "no_user":
             return False
         
 
